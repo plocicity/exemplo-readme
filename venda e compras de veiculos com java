@@ -1,0 +1,202 @@
+ placa: String
+- marca: String (Opções..., Outros)
+- modelo: string 
+- ano: int
+- valor: float
+- vendido: boolean
+- comprador: Pessoa
+
+***Loja
+
+- cadastro: Carro[ ]
+- capacidade: int
+- quantidade: int
+- proprietario: Pessoa
+
+***Pessoa
+
+- nome: String
+- cpf: String
+- email: String
+- telefone: String
+--------------------------------------------------------------------------------------------------------------
+# As classes dentro do parênteses são as classes mãe da classe sendo definida
+class HondaFit(Carro):
+
+    def __init__(self, mecanismoAceleracao):
+        modelo = "Honda Fit"
+        # chama o construtor da classe mãe, ou seja, da classe "Carro"
+        super().__init__(self, modelo, mecanismoAceleracao)
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+lass Carro:
+    def __init__(self, modelo, mecanismoAceleracao):
+        self.__modelo = modelo;
+        self.__velocidade = 0
+        self.__mecanismoAceleracao = mecanismoAceleracao
+
+    def acelerar(self):
+        mecanismoAceleracao.acelerar()
+
+    def frear(self):
+        # Codigo para frear o carro
+
+    def acenderFarol(self):
+        # Codigo para acender o farol do carro
+
+    def getVelocidade(self):
+        return self.velocidade
+
+    def __setVelocidade(self):
+        # Codigo para alterar a velocidade por dentro do objeto
+
+    def getModelo(self):
+        return self.modelo
+
+    def getCor(self):
+        return self.cor
+
+    def setCor(self, cor):
+        self.cor = cor
+        _________________________________________
+        
+        public class Main {
+    public static void main(String[] args) {
+        Automovel moto = new Moto("Yamaha XPTO-100", new MecanismoDeAceleracaoDeMotos())
+        Automovel carro = new Carro("Honda Fit", new MecanismoDeAceleracaoDeCarros())
+        List<Automovel> listaAutomoveis = Arrays.asList(moto, carro);
+        for (Automovel automovel : listaAutomoveis) {
+            automovel.acelerar();
+            automovel.acenderFarol();
+            
+            }
+            } 
+            
+            __________________________________________________
+            
+            import java.util.*;
+
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane ;
+
+public class Executa
+
+{
+
+public static void main(String[] args)
+
+{
+
+leves l=new leves();
+
+pesados p=new pesados();
+
+passeio pa=new passeio();
+
+int x;
+
+x=Integer.parseInt(JOptionPane.showInputDialog(null,"Escolha o veiculo desejado ou 4 para sair: \n 1-carro \n 2-caminhao \n 3-moto \n 4-sair"));
+
+while(x!=4)
+
+{
+
+if(x==1)
+
+{
+
+pa.velocidade();
+
+}
+
+else
+
+{
+
+if(x==2)
+
+{
+
+}
+
+else
+
+{
+
+if(x==3)
+
+{
+
+System.out.println("oi");
+
+}
+
+}
+
+}
+
+x=Integer.parseInt(JOptionPane.showInputDialog(null,"Escolha o veiculo desejado ou 4 para sair: \n 1-carro \n 2-caminhao \n 3-moto \n 4-sair"));
+
+}
+
+}
+
+}
+
+public class CADASTRO
+
+{
+
+for(int j=0;j<(j+1);j++)
+
+{
+
+String[] nomec=new String[j];//nome do comprador
+
+String[] nomev=new String[j];//nome do veiculo
+
+String[] marca=new String[j];//nome da marca
+
+double[] preco=new double[j];
+
+nomec[j]=JOptionPane.showInputDialog(null,"digite o nome do cliente");
+
+nomev[j]=JOptionPane.showInputDialog(null,"digite o nome do veiculo");
+
+marca[j]=JOptionPane.showInputDialog(null,"digite a marca do veiculo");
+
+preco[j]=Double.parseDouble(JOptionPane.showInputDialog(null,"digite o preço do veiculo"));
+
+}
+
+}
+---------------------------------------------------------------------------------------------
+void  setNegocio(){
+			
+	if(tipo == 1)
+	{
+		System.out.println("Padrão: Popular"); 
+	}
+	else
+	{
+		System.out.println("Padrão: Luxo");
+	}
+	
+} // fim do método
+
+double getValor(int ano){
+	
+} // Merodo que retorna o valor do carro
+
+public void getInformacoes() 
+{
+	System.out.println("Código: "+ codigo);
+	System.out.println("Nome: "+ nome);
+	System.out.println("Ano: "+ ano);
+	System.out.println("Valor Inicial: "+ valorInicial);
+	System.out.println("Valor de mercado em 2013: ");
+		
+} // fim do método getInformacoes
+        
